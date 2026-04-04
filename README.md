@@ -16,4 +16,3 @@ Avoidance: VFH(Vector Field Histogram) 기반 전방 장애물 회피
 
 ## ⚙️ Core Pipeline
 `가상 센서 인지부` ➡️ `모드 스위칭 (VFH / APN / TPN)` ➡️ `측방향 가속도 연산` ➡️ `Autopilot (PID 제어)` ➡️ `3DOF 물리 엔진` ➡️ `화면 시각화 및 피드백`
--
