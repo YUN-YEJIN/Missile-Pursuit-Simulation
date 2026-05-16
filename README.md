@@ -4,7 +4,7 @@ Missile Pursuit Simulation (사미용두B 팀)
 본 레포지토리는 MATLAB 및 Simulink 환경에서 구현된 PN 기반 고도화된 2D 미사일 요격 시뮬레이션입니다.
 추격되지 않기 위해 지그재그로 회피 기동을 펼치는 동적 표적을 상대로, 단순한 추적이 아닌 미래의 예상 교차점을 계산하여 타격하는 비례항법(PNG, TPN/APN) 유도 법칙을 핵심 알고리즘으로 사용합니다.
 
-# ⚙️ Core Pipeline
+# 전체적인 파이프라인(미정)
 `가상 센서 인지부` ➡️ `모드 스위칭 (VFH / APN / TPN)` ➡️ `측방향 가속도 연산` ➡️ `Autopilot (PID 제어)` ➡️ `3DOF 물리 엔진` ➡️ `화면 시각화 및 피드백`
 
 # Only_PNG_Example 폴더
@@ -17,15 +17,12 @@ Missile Pursuit Simulation (사미용두B 팀)
 
 ### 1. 초기 조건 입력
 - 처음 실행하면 Target의 초기 상태를 직접 입력해야 합니다.
-  
+```matlab
 Target initial x position [m] =
-
 Target initial y position [m] = 
-
 Target speed [m/s] = 
-
 Target heading angle [deg] =
-
+```
 ---
 
 ### 2. mode 선택
