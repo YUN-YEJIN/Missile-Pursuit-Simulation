@@ -33,11 +33,11 @@ T_goal = [10000; 1000];
 % ================================
 C_pos     = [0; 0];
 C_speed   = 300;
-%C_heading_deg = 20;
-%C_heading = deg2rad(C_heading_deg);
+C_heading_deg = 20;
+C_heading = deg2rad(C_heading_deg);
 
-initial_los = T_pos - C_pos;
-C_heading   = atan2(initial_los(2), initial_los(1));  % LOS 방향으로 출발
+%initial_los = T_pos - C_pos;
+%C_heading   = atan2(initial_los(2), initial_los(1));  % LOS 방향으로 출발
 C_vel       = C_speed * [cos(C_heading); sin(C_heading)];
 
 %% ================================
